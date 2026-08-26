@@ -1,0 +1,15 @@
+.hero-fixed .marniehero {
+  background: #f6f3ef !important;
+}
+
+.hero-fixed .marniehero > img {
+  object-fit: contain !important;
+  object-position: right center !important;
+}
+
+@media (max-width: 800px) {
+  .hero-fixed .marniehero > img {
+    object-fit: cover !important;
+    object-position: 58% center !important;
+  }
+}
