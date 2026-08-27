@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./hero-crop-fix.css";
 import { BurtAssistant } from "./burt-assistant";
+import { CookieBanner } from "./cookie-banner";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.smallshopsos.co.uk"),
@@ -16,4 +17,4 @@ export const metadata: Metadata = {
   },
   other: { "codex-preview": "development" },
 };
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="en-GB"><body>{children}<BurtAssistant /></body></html>; }
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="en-GB"><body>{children}<BurtAssistant /><CookieBanner /></body></html>; }
