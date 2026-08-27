@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   description: "Creative digital support from Marnie Danson: branding, websites, content, ecommerce, product data and practical business support.",
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml", sizes: "48x48" },
+      { url: "/favicon.svg?v=20260827-round", type: "image/svg+xml", sizes: "48x48" },
     ],
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    shortcut: "/favicon.svg?v=20260827-round",
+    apple: "/favicon.svg?v=20260827-round",
   },
   other: { "codex-preview": "development" },
 };
