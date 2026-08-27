@@ -20,7 +20,7 @@ export default function Page(){useEffect(()=>{if(document.getElementById('pph-hi
 </div>
 <div className="nav">
 <a href="/" className="brand">
-<img style={{width:170,height:78,objectFit:'contain'}} src="/assets/final/sos-logo-primary.png?v=20260826-imagefix" alt="Small Shop SOS — Creative Digital Mechanic"/>
+<img style={{width:170,height:78,objectFit:'contain'}} src="/assets/final/sos-logo-primary.png?v=20260827-livefix" alt="Small Shop SOS — Creative Digital Mechanic"/>
 </a>
 <nav aria-label="Main navigation">
 <a href="/">Home</a>
@@ -46,7 +46,7 @@ export default function Page(){useEffect(()=>{if(document.getElementById('pph-hi
 <main id="main">
 <section className="hero hero-fixed" id="home">
 <figure className="marniehero">
-<img src="/assets/final/marnie-hero-workspace.png?v=20260826-imagefix" alt="Marnie Danson working at the Small Shop SOS desk"/>
+<img src="/assets/final/marnie-hero-workspace.png?v=20260827-livefix" alt="Marnie Danson working at the Small Shop SOS desk"/>
 </figure>
 <div className="hero-copy">
 <p className="eyebrow">GIVE ME THE MESS, THE DEADLINE AND ACCESS —</p>
@@ -122,7 +122,7 @@ export default function Page(){useEffect(()=>{if(document.getElementById('pph-hi
 <a className="textcta" href="/work-with-me/">Tell me what needs sorting →</a>
 </div>
 <figure className="about-split__image">
-<img src="/assets/final/about-creative-practical.png?v=20260826-imagefix" alt="Small Shop SOS creative and practical work: website screens, notes, branding materials and Shopify Partner card"/>
+<img src="/assets/final/about-creative-practical.png?v=20260827-livefix" alt="Small Shop SOS creative and practical work: website screens, notes, branding materials and Shopify Partner card"/>
 </figure>
 </section>
 <section className="proof" id="blog">
@@ -151,11 +151,11 @@ export default function Page(){useEffect(()=>{if(document.getElementById('pph-hi
 <p className="eyebrow" style={{margin:0,textAlign:'center'}}>AND THE SCREENSHOTS, BECAUSE RECEIPTS MATTER</p>
 <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',gap:18,alignItems:'start'}}>
 <figure style={{margin:0,background:'#fff',border:'1px solid #d9d2ce',padding:10}}>
-<img src="/assets/final/susie-review.png?v=20260826-imagefix" alt="Five-star PeoplePerHour review from Susie L: Really amazing work - so pleased - thank you :)" style={{width:'100%',height:'auto',display:'block'}}/>
+<img src="/assets/final/susie-review.png?v=20260827-livefix" alt="Five-star PeoplePerHour review from Susie L: Really amazing work - so pleased - thank you :)" style={{width:'100%',height:'auto',display:'block'}}/>
 <figcaption style={{padding:'10px 4px 2px',fontSize:12,color:'#4b4148'}}>Susie L. · Five-star PeoplePerHour feedback</figcaption>
 </figure>
 <figure style={{margin:0,background:'#fff',border:'1px solid #d9d2ce',padding:10}}>
-<img src="/assets/final/pph-endorsements.png?v=20260826-imagefix" alt="PeoplePerHour endorsements for Marnie from Sunaina E, Muhammad H and Susie L" style={{width:'100%',height:'auto',display:'block'}}/>
+<img src="/assets/final/pph-endorsements.png?v=20260827-livefix" alt="PeoplePerHour endorsements for Marnie from Sunaina E, Muhammad H and Susie L" style={{width:'100%',height:'auto',display:'block'}}/>
 <figcaption style={{padding:'10px 4px 2px',fontSize:12,color:'#4b4148'}}>Professional endorsements and client feedback</figcaption>
 </figure>
 </div>
@@ -189,7 +189,7 @@ export default function Page(){useEffect(()=>{if(document.getElementById('pph-hi
 </section>
 <footer className="site-footer">
 <div className="footer-brand">
-<img src="/assets/final/sos-logo-primary.png?v=20260826-imagefix" alt="Small Shop SOS — Creative Digital Mechanic"/>
+<img src="/assets/final/sos-logo-primary.png?v=20260827-livefix" alt="Small Shop SOS — Creative Digital Mechanic"/>
 <p>Creative digital support for small businesses. Made, built and sorted by Marnie.</p>
 </div>
 <div>
@@ -238,7 +238,7 @@ export default function Page(){useEffect(()=>{if(document.getElementById('pph-hi
 </nav>
 </div>
 <div className="footer-signoff">
-<img src="/assets/final/sos-logo-primary.png?v=20260826-imagefix" alt="Small Shop SOS"/>
+<img src="/assets/final/sos-logo-primary.png?v=20260827-livefix" alt="Small Shop SOS"/>
 <span>Creative digital mechanic</span>
 </div>
 </footer>
