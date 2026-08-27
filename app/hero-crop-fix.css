@@ -3,8 +3,10 @@
 }
 
 .hero-fixed .marniehero > img {
-  object-fit: contain !important;
-  object-position: right center !important;
+  /* Keep the hero photograph full-bleed, but anchor the crop at the top
+     so Marnie's hair and face are not cut off by the header. */
+  object-fit: cover !important;
+  object-position: 50% 0 !important;
 }
 
 @media (max-width: 800px) {
