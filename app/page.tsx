@@ -170,7 +170,7 @@ export default function Page(){const [burt,setBurt]=useState(false);const [burtV
 <a className="cta light" href="/work-with-me/">Let’s work together →</a>
 </section>
 </main>
-<section className="pph-burt" aria-label="PeoplePerHour profile and Ask Burt">
+<section className="pph-burt" aria-label="PeoplePerHour profile and Small Shop SOS Help Assistant">
 <div className="pph-side" style={{minHeight:560,display:'flex',flexDirection:'column',alignItems:'center',textAlign:'center'}}>
 <p className="eyebrow">FIND ME ON PEOPLEPERHOUR</p>
 <h2>Find me on<br/>PeoplePerHour.</h2>
@@ -180,11 +180,11 @@ export default function Page(){const [burt,setBurt]=useState(false);const [burtV
 </div>
 <div className="burt-side" style={{minHeight:560,display:'flex',flexDirection:'column',justifyContent:'center'}}>
 <p className="eyebrow">NOT SURE WHAT YOU NEED?</p>
-<div className="burt-mark" aria-hidden="true">B</div>
-<h2>Ask Burt.</h2>
-<p>Burt is the Small Shop SOS assistant. Tell him what you’re trying to do, what’s gone wrong or what you need help with — he’ll point you in the right direction.</p>
-<p className="burt-note">He’s less scary than a contact form.</p>
-<button className="cta" onClick={()=>setBurt(true)}>Ask Burt →</button>
+<div className="burt-mark" aria-hidden="true">?</div>
+<h2>Help Assistant.</h2>
+<p>The Small Shop SOS Help Assistant is here for the first bit: tell it what you need, what has gone wrong, or where you are stuck.</p>
+<p className="burt-note">No jargon. No daft questions. Just a useful place to start.</p>
+<button className="cta" onClick={()=>setBurt(true)}>Ask the Help Assistant →</button>
 </div>
 </section>
 <footer className="site-footer">
@@ -243,11 +243,12 @@ export default function Page(){const [burt,setBurt]=useState(false);const [burtV
 </div>
 </footer>
 <style>{`.about-split{display:grid!important;grid-template-columns:1fr 1fr!important;padding:0!important;background:#f6f3ef!important;align-items:stretch!important}.about-split__copy{padding:clamp(46px,7vw,105px)!important;display:flex;flex-direction:column;justify-content:center}.about-split__copy h2{max-width:580px}.about-split__copy p{max-width:520px}.about-split__image{margin:0!important;height:540px!important;min-height:540px!important;overflow:hidden;background:#e8e2df}.about-split__image img{display:block!important;width:100%!important;height:540px!important;min-height:540px!important;object-fit:cover!important;object-position:center!important}@media(max-width:800px){.about-split{grid-template-columns:1fr!important}.about-split__copy{padding:50px 25px!important}.about-split__image{height:310px!important;min-height:310px!important}.about-split__image img{height:310px!important;min-height:310px!important;object-position:center!important}.about-split__copy h2{font-size:clamp(40px,12vw,64px)!important}}.site-footer{grid-template-columns:1.2fr .65fr .9fr 1fr .9fr .6fr!important;gap:clamp(16px,2.2vw,35px)!important;align-items:start!important;padding:36px clamp(25px,5vw,82px)!important;border-top:1px solid var(--line)}.site-footer img{width:142px!important;height:68px!important;object-fit:contain!important}.site-footer p{margin:10px 0 0!important;max-width:205px!important;font-size:10px!important;line-height:1.55}.site-footer>div>b{display:block;margin:2px 0 12px;color:var(--plum);font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.site-footer nav{display:grid!important;gap:7px!important;font-size:9px!important;font-weight:600!important}.site-footer nav a:hover{color:var(--plum)}.site-footer nav span{color:#5b565a;font-size:9px}.site-footer .footer-signoff{display:grid;justify-items:end;gap:8px;text-align:right}.site-footer .footer-signoff img{width:120px!important;height:57px!important}.site-footer .footer-signoff span{color:var(--plum);font-size:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}@media(max-width:1050px){.site-footer{grid-template-columns:repeat(3,1fr)!important}.site-footer .footer-signoff{justify-items:start;text-align:left}}@media(max-width:650px){.site-footer{grid-template-columns:1fr!important;gap:26px!important}.site-footer .footer-signoff{justify-items:start;text-align:left}}`}</style>
-{burtVisible&&<button className="burtbtn" onClick={()=>setBurt(!burt)} aria-expanded={burt}>Ask Burt</button>}{burt&&<aside className="burt" aria-label="Ask Burt assistant">
-<button aria-label="Close Burt" onClick={()=>setBurt(false)}>×</button>
-<b>BURT</b>
-<p>What needs sorting?</p>
-<a href="/services/">What can Marnie help with?</a>
-<a href="/work-with-me/">I need to talk to Marnie</a>
+{burtVisible&&<button className="burtbtn" onClick={()=>setBurt(!burt)} aria-expanded={burt}>Need help?</button>}{burt&&<aside className="burt" aria-label="Small Shop SOS Help Assistant">
+<button aria-label="Close Help Assistant" onClick={()=>setBurt(false)}>×</button>
+<b>HELP ASSISTANT</b>
+<p>Tell me what you need help with.</p>
+<a className="cta" href="https://small-shop-sos-help-assistant.young-credit-2510.workers.dev/" target="_blank" rel="noreferrer">Open the Help Assistant ↗</a>
+<a href="/services/">See what Marnie can help with</a>
+<a href="/work-with-me/">Talk to Marnie instead</a>
 </aside>}<style>{`.pph-burt{display:grid;grid-template-columns:1fr 1fr;background:#eee9e5;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.pph-burt>div{padding:clamp(40px,5vw,72px) clamp(25px,7vw,100px)}.pph-burt h2{margin:0 0 14px;font:700 clamp(38px,4.4vw,66px)/.9 var(--display);letter-spacing:-.055em}.pph-side{background:#f6f3ef;color:var(--char)}.pph-side>p:not(.eyebrow){max-width:370px;margin:0 0 20px;font-size:13px}.pph-widget{min-height:320px;display:flex;justify-content:flex-start;align-items:center;margin:8px 0 14px}.burt-side{position:relative;overflow:hidden;background:var(--char);color:#fff}.burt-side .eyebrow{color:#dba6c0}.burt-side>p:not(.eyebrow){max-width:400px;color:#e5dfe3;font-size:13px}.burt-side .burt-note{color:#dba6c0;font:italic 20px/1.1 var(--display)}.burt-side .cta{margin-top:12px;background:var(--plum);border-color:#c597af}.burt-mark{position:absolute;right:clamp(25px,5vw,72px);top:32px;display:grid;place-items:center;width:72px;height:72px;border:1px solid #b7bcc366;border-radius:50%;color:#f6f3ef;font:700 44px/1 var(--display);box-shadow:inset 0 0 0 7px #5a2a4a}.burtbtn{background:var(--plum)!important;border-color:#d7a8c0!important;color:#fff!important;border-radius:999px!important;box-shadow:0 7px 18px #1a1a1f44}.burt{background:var(--cream)!important;border-color:var(--plum)!important;box-shadow:7px 7px 0 #5a2a4a!important}.burt>b{display:block;color:var(--plum)!important;font:700 30px var(--display)}.burt a{color:var(--char)!important}.burt button{color:var(--plum)!important}@media(max-width:800px){.pph-burt{grid-template-columns:1fr}.pph-side{order:1}.burt-side{order:2}.pph-widget{justify-content:center}.burt-mark{right:26px;top:26px;width:58px;height:58px;font-size:35px}}`}</style>
 </>}
