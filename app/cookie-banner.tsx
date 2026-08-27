@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const STORAGE_KEY = "sos-cookie-consent-v1";
+const STORAGE_KEY = "sos-cookie-consent-v2";
 
 export function CookieBanner() {
   const [visible, setVisible] = useState(false);
