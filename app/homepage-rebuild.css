@@ -5,3 +5,47 @@
 .target-close{display:grid;grid-template-columns:1fr 1fr 230px 1fr 1.25fr;gap:30px;padding:40px clamp(35px,5vw,78px);background:radial-gradient(circle at 50% 50%,#2b1529,#0c0d10 60%);border-top:1px solid #201620}.target-close>div{padding-right:18px;border-right:1px solid #4b3845}.target-close>div:last-child{border:0}.close-label{margin:0 0 10px;color:#cb7da3;font:700 10px Montserrat,Arial,sans-serif;letter-spacing:.11em}.target-close p:not(.close-label){margin:0;color:#e4dce0;font-size:12px;line-height:1.55}.target-close a{display:inline-block;margin-top:19px;color:#e9b3c9;font:700 10px Montserrat,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}.sorted-mark{display:grid;place-content:center;justify-items:center;min-height:130px;padding:0!important;border:1px solid #a85b83!important;border-radius:50%;aspect-ratio:1;color:#f5edf0;background:#161118;box-shadow:0 0 35px #7b2c5944}.sorted-mark span{font:700 8px Montserrat,Arial,sans-serif;letter-spacing:.3em}.sorted-mark b{margin:8px 0;font:24px 'Playfair Display',Georgia,serif;letter-spacing:.08em}.sorted-mark i{color:#e080ad;font-style:normal}.burt-promo{display:flex;gap:16px;align-items:center}.burt-promo>img{width:98px;height:98px;object-fit:contain}.burt-promo>span{font-size:64px;color:#d16b9a}
 @media(max-width:1100px){.target-nav{grid-template-columns:200px 1fr}.target-nav .outline-button{display:none}.target-services{grid-template-columns:1fr repeat(3,1fr)}.service-manifesto{grid-row:span 2}.strip-bespoke{display:none}.target-close{grid-template-columns:1fr 1fr 1fr}.target-close>div{border-bottom:1px solid #4b3845;padding-bottom:20px}.burt-promo{grid-column:span 2}}
 @media(max-width:760px){.target-topline a,.target-nav nav{display:none}.target-nav{grid-template-columns:1fr auto;padding:16px 22px}.target-brand strong{font-size:49px}.target-brand i{font-size:15px}.target-hero{grid-template-columns:1fr}.target-copy{padding:64px 25px 48px}.target-copy h1{font-size:76px}.target-photo{min-height:380px}.chrome-sweep{left:4%;bottom:-15px;width:88%;height:160px}.target-services{grid-template-columns:1fr 1fr;padding:42px 25px}.service-manifesto{grid-column:1/-1;grid-row:auto;padding:0 0 20px}.strip-service{border-bottom:1px solid #594052;padding:15px 8px}.target-close{grid-template-columns:1fr;padding:50px 25px}.target-close>div,.burt-promo{border-right:0;grid-column:auto}.sorted-mark{width:150px}.burt-promo>img{width:100px}}
+
+/* Composed hero: one artwork under the real responsive page content. */
+.target-hero {
+  display: block;
+  min-height: 620px;
+  overflow: hidden;
+  background: #050507;
+}
+.target-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.target-photo::after { content: none; }
+.target-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.target-copy {
+  position: relative;
+  z-index: 1;
+  width: min(49%, 670px);
+  min-height: 620px;
+  padding: 84px 5.4% 54px;
+  color: #f7f0e7;
+  background: transparent;
+}
+.chrome-sweep { display: none; }
+
+@media (max-width: 760px) {
+  .target-hero { min-height: 690px; }
+  .target-photo img { object-position: 67% center; }
+  .target-copy {
+    width: 100%;
+    min-height: 690px;
+    padding: 56px 28px 38px;
+    background: rgba(5, 5, 7, .72);
+  }
+}
