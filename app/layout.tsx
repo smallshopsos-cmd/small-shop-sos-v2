@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./hero-crop-fix.css";
 import "./showstopper.css";
+import "./preview-texture.css";
 import { BurtAssistant } from "./burt-assistant";
 
 export const metadata: Metadata = {
