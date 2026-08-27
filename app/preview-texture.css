@@ -1,0 +1,4 @@
+/* V2 preview sitewide texture. Visual layer only; existing layouts remain intact. */
+html{background:#171218 url('/assets/final/sos-texture.svg') center top/cover fixed no-repeat}
+body{background:transparent}
+body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:url('/assets/final/sos-texture.svg') center/cover no-repeat;filter:saturate(1.08) contrast(1.04)}
