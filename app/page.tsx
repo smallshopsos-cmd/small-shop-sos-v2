@@ -3,70 +3,51 @@
 import { CookieBanner } from "./cookie-banner";
 import "./homepage-rebuild.css";
 
-const services = [
-  ["01", "Branding", "Identity that connects and converts.", "/services/branding-design/"],
-  ["02", "Websites", "Beautiful, built right, easy to manage.", "/services/websites/"],
-  ["03", "Digital tools", "Systems and automations that save hours.", "/services/"],
-  ["04", "Content", "Messaging and assets that get results.", "/services/content-copy/"],
-  ["05", "Ecommerce", "Stores that are simple for you and seamless for them.", "/services/ecommerce-support/"],
-  ["06", "Admin support", "The behind-the-scenes that keeps everything running.", "/services/"],
+const serviceStrip = [
+  ["✦", "Creative & branding", "Stand out for all the right reasons.", "/services/branding-design/"],
+  ["▣", "Websites & content", "Beautiful, functional and found online.", "/services/websites/"],
+  ["⌑", "Ecommerce support", "Shopify, listings, data and daily admin.", "/services/ecommerce-support/"],
+  ["◌", "Digital tools & systems", "Smart tools that save time and headaches.", "/services/"],
+  ["◉", "Admin support", "Reliable help so you can focus on growth.", "/services/"],
 ];
 
 export default function Page() {
   return <>
     <a className="skip" href="#main">Skip to content</a>
-    <header className="rebuild-header">
-      <a className="rebuild-brand" href="/" aria-label="Small Shop SOS home">
-        <span>SMALL SHOP</span><strong>SOS</strong><em>CREATIVE DIGITAL MECHANIC</em>
-      </a>
-      <nav aria-label="Main navigation">
-        <a href="/services/">Services</a><a href="/about/">About</a><a href="/work-with-me/">Work with me</a><a href="/blog/">Journal</a>
-      </nav>
-      <a className="rebuild-button" href="/book/">Book a time →</a>
+    <header className="target-header">
+      <div className="target-topline"><span>✦ &nbsp; CREATIVE SUPPORT. DIGITAL SOLUTIONS. SORTED.</span><a href="mailto:hello@smallshopsos.co.uk">hello@smallshopsos.co.uk</a></div>
+      <div className="target-nav">
+        <a className="target-brand" href="/" aria-label="Small Shop SOS home"><span>SMALL SHOP</span><strong>SOS</strong><em>CREATIVE & DIGITAL ASSISTANCE</em><i>Marnie Danson</i></a>
+        <nav aria-label="Main navigation"><a className="active" href="/">Home</a><a href="/about/">About</a><a href="/services/">Services</a><a href="/book/">Book a time</a><a href="/blog/">Blog</a></nav>
+        <a className="outline-button" href="/work-with-me/">Work with me <b>→</b></a>
+      </div>
     </header>
 
-    <main id="main" className="homepage-rebuild">
-      <section className="rebuild-hero">
-        <div className="hero-copy">
-          <p className="hero-kicker">CREATIVE SUPPORT. DIGITAL SOLUTIONS. <b>SORTED.</b></p>
-          <h1>I’ll sort<br/><i>it.</i></h1>
-          <p className="hero-label">GIVE ME THE MESS, THE DEADLINE AND ACCESS —</p>
-          <p className="hero-lede">I’m the creative digital mechanic for small businesses who are too busy running the show to fix what’s slowing it down.</p>
-          <a className="rebuild-button light" href="/work-with-me/">Work with me →</a>
-          <p className="scribble scribble-one">Let’s get<br/>you sorted.</p>
+    <main id="main" className="target-home">
+      <section className="target-hero">
+        <div className="target-copy">
+          <p className="target-kicker">GIVE ME THE MESS, THE DEADLINE AND ACCESS —</p>
+          <h1>I’ll <i>sort</i> it.</h1>
+          <p className="target-lede">Creative digital support for small businesses who are too busy running the show to fix what’s slowing it down.</p>
+          <ul><li>Branding</li><li>Websites</li><li>Content</li><li>Ecommerce</li><li>Digital tools</li><li>Admin support</li></ul>
+          <p><a className="plum-button" href="/work-with-me/">Work with me →</a><a className="line-link" href="/services/">or explore services</a></p>
         </div>
-        <figure className="hero-portrait">
-          <div className="metal-ring" aria-hidden="true" />
-          <img src="/assets/final/marnie-black-blazer.png?v=20260827-livefix" alt="Marnie Danson, founder of Small Shop SOS" />
-          <p className="scribble scribble-two">Clear systems<br/>Calm creative<br/>Real results</p>
-          <p className="scribble scribble-three">The mix of<br/>creative, tech<br/>and problem<br/>solving.</p>
-        </figure>
+        <figure className="target-photo"><img src="/assets/final/marnie-hero-workspace.png?v=20260827-livefix" alt="Marnie Danson at her desk, ready to sort the creative and practical work" /></figure>
+        <div className="chrome-sweep" aria-hidden="true" />
       </section>
 
-      <section className="help-section" aria-labelledby="help-heading">
-        <div className="help-intro">
-          <p className="section-label">HOW I HELP</p>
-          <h2 id="help-heading">Strategy. Systems.<br/><i>Standout.</i></h2>
-          <p>The blend of creative, tech and problem solving that actually moves your business forward.</p>
-        </div>
-        <div className="help-list">
-          {services.map(([number, title, copy, href]) => <a href={href} key={title} className="help-row">
-            <span className="service-number">{number}</span><span className="service-mark" aria-hidden="true">✦</span>
-            <span><b>{title}</b><em>{copy}</em></span>
-          </a>)}
-        </div>
-        <aside className="help-note">Pick your<br/>problem.<br/>I’ll handle<br/>the fix.<a href="/services/" aria-label="Explore services">→</a></aside>
+      <section className="target-services" aria-label="Ways Marnie can help">
+        <p className="service-manifesto">I design it.<br/>Build it.<br/>Fix it. Sort it. <b>♡</b></p>
+        {serviceStrip.map(([mark, title, copy, href]) => <a className="strip-service" href={href} key={title}><span>{mark}</span><b>{title}</b><em>{copy}</em></a>)}
+        <a href="/bespoke-quote/" className="strip-bespoke">Need something<br/>specific?<i>Let’s talk.</i><b>→</b></a>
       </section>
 
-      <section className="method-section" aria-labelledby="method-heading">
-        <div className="method-image"><img src="/assets/final/creative-digital-mechanic-flatlay.png?v=20260827-livefix" alt="Creative digital mechanic tools in the Small Shop SOS studio" /></div>
-        <div className="method-copy">
-          <p className="section-label">THE SOS METHOD</p>
-          <h2 id="method-heading">Diagnose. Design. Deliver.<br/><i>Done right.</i></h2>
-          <p>No fluff. No jargon. Just clear advice and work that gets results. Straight talking, reliable support from someone who gets it done.</p>
-          <a className="rebuild-button light" href="/about/">See how it works →</a>
-          <p className="scribble method-note">You run<br/>the show.<br/>I keep it<br/>moving.</p>
-        </div>
+      <section className="target-close">
+        <div><p className="close-label">CREATIVE DIGITAL MECHANIC</p><p>The mix of creative, tech and problem solving your business actually needs.</p><a href="/about/">About Marnie →</a></div>
+        <div><p className="close-label">REAL SOLUTIONS</p><p>No fluff. No jargon. Just clear advice and work that gets results.</p><a href="/services/">See how I can help →</a></div>
+        <div className="sorted-mark"><span>SMALL SHOP SOS</span><b>SORTED</b><i>✦</i></div>
+        <div><p className="close-label">REAL PEOPLE</p><p>Straight talking, reliable support from someone who gets it done.</p><a href="/about/">Kind words →</a></div>
+        <div className="burt-promo"><span>◉</span><div><p className="close-label">ASK BURT</p><p>Your built-in assistant for quick answers and good ideas.</p><a href="#burt-assistant">Chat with Burt →</a></div></div>
       </section>
     </main>
 
