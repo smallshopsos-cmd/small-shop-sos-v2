@@ -1,0 +1,6 @@
+/* Preview-only sitewide texture layer. Keeps page layouts intact. */
+html{background:#171218 url('/assets/final/sos-texture.svg') center top/cover fixed no-repeat}
+body{background:transparent}
+body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:url('/assets/final/sos-texture.svg') center/cover no-repeat;filter:saturate(1.08) contrast(1.04)}
+/* Let the texture breathe through the outer page while existing sections keep their designed surfaces. */
+.top,.site-footer,footer{position:relative}
