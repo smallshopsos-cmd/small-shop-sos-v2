@@ -40,3 +40,62 @@
     object-position: 58% 0 !important;
   }
 }
+
+
+/* V2 desktop hero: a deliberate split layout keeps the portrait intact. */
+body .hero-fixed {
+  display: grid !important;
+  grid-template-columns: 47% 53% !important;
+  grid-template-rows: 470px !important;
+  min-height: 470px !important;
+}
+
+body .hero-fixed .hero-copy {
+  grid-area: 1 / 1 !important;
+  width: 100% !important;
+  min-height: 470px !important;
+  padding: clamp(44px, 5vw, 78px) clamp(28px, 5vw, 76px) !important;
+  background: #f6f3ef !important;
+}
+
+body .hero-fixed .marniehero {
+  grid-area: 1 / 2 !important;
+  width: 100% !important;
+  height: 470px !important;
+  min-height: 470px !important;
+}
+
+body .hero-fixed .marniehero > img {
+  height: 470px !important;
+  min-height: 470px !important;
+  object-fit: cover !important;
+  object-position: 50% 0 !important;
+}
+
+@media (max-width: 800px) {
+  body .hero-fixed {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto 360px !important;
+    min-height: 0 !important;
+  }
+
+  body .hero-fixed .hero-copy {
+    grid-area: 1 / 1 !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    padding: 48px 25px !important;
+  }
+
+  body .hero-fixed .marniehero {
+    grid-area: 2 / 1 !important;
+    width: 100% !important;
+    height: 360px !important;
+    min-height: 360px !important;
+  }
+
+  body .hero-fixed .marniehero > img {
+    height: 360px !important;
+    min-height: 360px !important;
+    object-position: 58% 0 !important;
+  }
+}
