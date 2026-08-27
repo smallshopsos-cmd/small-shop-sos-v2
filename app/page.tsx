@@ -17,7 +17,7 @@ export default function Page() {
     <header className="top">
       <div className="topline"><span>CREATIVE SUPPORT. DIGITAL SOLUTIONS. SORTED.</span><a href="mailto:hello@smallshopsos.co.uk">hello@smallshopsos.co.uk</a></div>
       <div className="nav">
-        <a href="/" className="brand"><img src="/assets/final/sos-logo-primary.png?v=20260827-livefix" alt="Small Shop SOS — Creative Digital Mechanic" /></a>
+        <a href="/" className="brand" aria-label="Small Shop SOS home"><span className="brand-type"><b>SMALL SHOP</b><strong>SOS</strong><em>CREATIVE DIGITAL MECHANIC</em></span></a>
         <nav aria-label="Main navigation"><a href="/">Home</a><a href="/about/">About</a><a href="/services/">Services</a><a href="/book/">Book a time</a><a href="/blog/">Journal</a></nav>
         <a className="cta" href="/work-with-me/">Work with me →</a>
       </div>
@@ -34,13 +34,12 @@ export default function Page() {
         </div>
         <figure className="showcase-portrait">
           <img src="/assets/final/marnie-hero-workspace.png?v=20260827-livefix" alt="Marnie Danson at her desk" />
-          <img className="mechanical-mark" src="/favicon.svg?v=20260827-round" alt="" aria-hidden="true" />
           <figcaption className="portrait-caption"><b>Marnie Danson</b>Author. Designer. Content maker. The person you call when it needs doing properly.</figcaption>
         </figure>
       </section>
       <div className="hero-ticker" aria-hidden="true"><span>DESIGN IT. BUILD IT. FIX IT. SORT IT. • DESIGN IT. BUILD IT. FIX IT. SORT IT. • </span><span>DESIGN IT. BUILD IT. FIX IT. SORT IT. • DESIGN IT. BUILD IT. FIX IT. SORT IT. • </span></div>
       <section className="manifesto">
-        <aside><img src="/favicon.svg?v=20260827-round" alt="" aria-hidden="true" /><p>Small Shop SOS<br/>System: Organise. Simplify. Sort.</p></aside>
+        <aside><p className="chapter-number">01</p><p>Small Shop SOS<br/>System: Organise. Simplify. Sort.</p></aside>
         <div><p className="kicker">A CREATIVE BRAIN WITH A TOOLKIT</p><h2>The <i>beautiful</i> bit and the boring bit — both handled.</h2><p>I’m not here to sell you a shiny strategy PDF and disappear. I make brands, build websites, write words, sort ecommerce, rescue product data and get the job over the line.</p></div>
       </section>
       <section className="service-rail">
@@ -54,11 +53,11 @@ export default function Page() {
       <section className="closeout"><p className="kicker">GOT A BIG IDEA OR A SMALL DISASTER?</p><h2>Give me the mess, the deadline and access.</h2><p>You don’t need a perfect brief. You just need to know it cannot stay as it is.</p><a className="cta" href="/work-with-me/">Let’s make it happen →</a></section>
     </main>
     <footer className="site-footer">
-      <div className="footer-brand"><img src="/assets/final/sos-logo-primary.png?v=20260827-livefix" alt="Small Shop SOS" /><p>Creative digital support for small businesses. Made, built and sorted by Marnie.</p></div>
+      <div className="footer-brand"><span className="brand-type"><b>SMALL SHOP</b><strong>SOS</strong><em>CREATIVE DIGITAL MECHANIC</em></span><p>Creative digital support for small businesses. Made, built and sorted by Marnie.</p></div>
       <div><b>Start here</b><nav><a href="/about/">About</a><a href="/services/">Services</a><a href="/book/">Book a time</a><a href="/work-with-me/">Work with me</a></nav></div>
       <div><b>Useful things</b><nav><a href="/services/websites/">Websites</a><a href="/services/content-copy/">Content & copy</a><a href="/services/ecommerce-support/">Ecommerce</a><a href="/services/va-admin-support/">VA & admin</a></nav></div>
       <div><b>Say hello</b><nav><a href="mailto:hello@smallshopsos.co.uk">hello@smallshopsos.co.uk</a><span>Poole, UK</span><span>Working with clients worldwide</span></nav></div>
-      <div className="footer-signoff"><img src="/favicon.svg?v=20260827-round" alt="Small Shop SOS mark" /><span>Creative digital mechanic</span></div>
+      <div className="footer-signoff"><strong>SOS</strong><span>Creative digital mechanic</span></div>
     </footer>
     <CookieBanner />
   </>;
